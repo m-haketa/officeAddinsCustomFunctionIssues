@@ -1,36 +1,41 @@
-# Custom functions in Excel
+# About This Repository
 
-Custom functions enable you to add new functions to Excel by defining those functions in JavaScript as part of an add-in. Users within Excel can access custom functions just as they would any native function in Excel, such as `SUM()`.  
+This repository is created to repoduce the issues for custom functions.
 
-This repository contains the source code used by the [Yo Office generator](https://github.com/OfficeDev/generator-office) when you create a new custom functions project. You can also use this repository as a sample to base your own custom functions project from if you choose not to use the generator. For more detailed information about custom functions in Excel, see the [Custom functions overview](https://docs.microsoft.com/office/dev/add-ins/excel/custom-functions-overview) article in the Office Add-ins documentation or see the [additional resources](#additional-resources) section of this repository.
 
-## Debugging custom functions
+## How to install this add-ins
 
-This template supports debugging custom functions from [Visual Studio Code](https://code.visualstudio.com/). For more information see [Custom functions debugging](https://aka.ms/custom-functions-debug). For general information on debugging task panes and other Office Add-in parts, see [Test and debug Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/testing/test-debug-office-add-ins).
+1. Start Office on the web
 
-## Questions and comments
+2. Click "Home" tab and click "Add-ins" button, then click "More Add-ins"
 
-We'd love to get your feedback about this sample. You can send your feedback to us in the *Issues* section of this repository.
+3. Click "Upload My Add-in" and select [manifest_dist.xml](./manifest_dist.xml)
 
-Questions about Office Add-ins development in general should be posted to [Microsoft Q&A](https://docs.microsoft.com/answers/questions/185087/questions-about-office-add-ins.html). If your question is about the Office JavaScript APIs, make sure it's tagged with [office-js-dev].
 
-## Join the Microsoft 365 Developer Program
-Get a free sandbox, tools, and other resources you need to build solutions for the Microsoft 365 platform.
-- [Free developer sandbox](https://developer.microsoft.com/microsoft-365/dev-program#Subscription) Get a free, renewable 90-day Microsoft 365 E5 developer subscription.
-- [Sample data packs](https://developer.microsoft.com/microsoft-365/dev-program#Sample) Automatically configure your sandbox by installing user data and content to help you build your solutions.
-- [Access to experts](https://developer.microsoft.com/microsoft-365/dev-program#Experts) Access community events to learn from Microsoft 365 experts.
-- [Personalized recommendations](https://developer.microsoft.com/microsoft-365/dev-program#Recommendations) Find developer resources quickly from your personalized dashboard.
+## Steps to create this repository
 
-## Additional resources
+### 1. create project
 
-* [Custom functions overview](https://docs.microsoft.com/office/dev/add-ins/excel/custom-functions-overview)
-* [Custom functions best practices](https://docs.microsoft.com/office/dev/add-ins/excel/custom-functions-best-practices)
-* [Custom functions runtime](https://docs.microsoft.com/office/dev/add-ins/excel/custom-functions-runtime)
-* [Office Add-ins documentation](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
-* More Office Add-ins samples at [OfficeDev on Github](https://github.com/officedev)
+```sh
+> yo office
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+     _-----_     ?──────────────────────────?
+    |       |    │   Welcome to the Office  │
+    |--(o)--|    │   Add-in generator, by   │
+   `---------´   │ @OfficeDev! Let's create │
+    ( _´U`_ )    │    a project together!   │
+    /___A___\   /?──────────────────────────?
+     |  ~  |
+   __'.___.'__
+ ´   `  |° ´ Y `
 
-## Copyright
+? Choose a project type: Excel Custom Functions using a Shared Runtime
+? Choose a script type: (Use arrow keys)
+? Choose a script type: TypeScript
+? What do you want to name your add-in? officeaddins_helpurlissue
 
-Copyright (c) 2019 Microsoft Corporation. All rights reserved.
+```
+
+### 2. Add help file and helpurl property
+
+See commit b216af3a16b57de6d38fd135043bcc72e9965ac5.
