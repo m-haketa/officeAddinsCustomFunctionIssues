@@ -3,6 +3,7 @@
 /**
  * Adds two numbers.
  * @customfunction
+ * @helpurl https://www.excelspeedup.com/_officeaddins/helpurlissue/help.html
  * @param first First number
  * @param second Second number
  * @returns The sum of the two numbers.
@@ -14,6 +15,7 @@ export function add(first: number, second: number): number {
 /**
  * Displays the current time once a second.
  * @customfunction
+ * @helpurl https://www.excelspeedup.com/_officeaddins/helpurlissue/help.html
  * @param invocation Custom function handler
  */
 export function clock(invocation: CustomFunctions.StreamingInvocation<string>): void {
@@ -38,6 +40,7 @@ export function currentTime(): string {
 /**
  * Increments a value once a second.
  * @customfunction
+ * @helpurl https://www.excelspeedup.com/_officeaddins/helpurlissue/help.html
  * @param incrementBy Amount to increment
  * @param invocation Custom function handler
  */
@@ -56,6 +59,7 @@ export function increment(incrementBy: number, invocation: CustomFunctions.Strea
 /**
  * Writes a message to console.log().
  * @customfunction LOG
+ * @helpurl https://www.excelspeedup.com/_officeaddins/helpurlissue/help.html
  * @param message String to write.
  * @returns String to write.
  */

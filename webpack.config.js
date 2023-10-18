@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 const urlDev = "https://localhost:3000/";
-const urlProd = "https://www.contoso.com/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
+const urlProd = "https://www.excelspeedup.com/_officeaddins/helpurlissue/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
 
 /* global require, module, process, __dirname */
 
@@ -89,6 +89,10 @@ module.exports = async (env, options) => {
                 return content.toString().replace(new RegExp(urlDev + "(?:public/)?", "g"), urlProd);
               }
             },
+          },
+          {
+            from: "src/help/*",
+            to: "[name][ext]",
           },
         ],
       }),
